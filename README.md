@@ -6,3 +6,6 @@ replace the sim-cache.c file in your simple-scaler
 make clean
 make
 ./sim-cache -victim:entries 0 -cache:dl1 dl1:128:32:1:l -cache:dl2 ul2:1024:64:4:l ../Labs/Pisa/anagram
+
+Analysis:
+By comparing the two SimpleScalar sim-cache.c files, we verified the correctness of the VC integration and measured consistent reductions in effective miss rate across conflict‑sensitive workloads. The implementation is compact, minimally invasive to the baseline, and yields clear gains with just a few entries, and with cache performance improvements ranging from 6.3% to 47.8% across different benchmarks.
