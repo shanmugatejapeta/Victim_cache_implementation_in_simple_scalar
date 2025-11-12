@@ -9,3 +9,11 @@ Steps to run:
 
 Analysis:
 By comparing the two SimpleScalar sim-cache.c files, we verified the correctness of the VC integration and measured consistent reductions in effective miss rate across conflict‑sensitive workloads. The implementation is compact, minimally invasive to the baseline, and yields clear gains with just a few entries, and with cache performance improvements ranging from 6.3% to 47.8% across different benchmarks.
+
+Conclusion:
+We verified the correctness of the VC integration and measured consistent reductions in effective miss rate across conflict‑sensitive workloads. The implementation is compact, minimally invasive to the baseline, and yields clear gains with just a few entries, and with cache performance improvements ranging from 6.3% to 47.8% across different benchmarks, and its better to have victim cache than the Fully associative cache of bigger size because, in practical implementation larger cache sizes are slow and uses more power, so having victim cache is a better option for faster accesses.
+
+References:
+1)High Performance Cache Architecture Using Victim Cache - https://rjwave.org/ijedr/papers/IJEDR1703068.pdf
+
+...more in Project Report.
